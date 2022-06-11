@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+
+.top{
+
+}
+.top__title-section{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    hr{
+        background: #0F3443;
+        @include toRem(height, 4);
+        @include toRem(border-radius, 8);
+        @include toRem(width, 165);
+        position: relative;
+        bottom: 2rem;
+        right: 4rem;
+    }
+}
+.top__title{
+    @include toRem(font-size, 64);
+    font-weight: 600;
+    color: #0F3443;
+    width: 30rem;
+}
+.top__paragraph{
+    color: #7D8182;
+    @include toRem(font-size, 20);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25rem;
+}
