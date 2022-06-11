@@ -6,6 +6,20 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.base {
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 2.646rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1.26rem;
 }
 
 nav {
@@ -18,6 +32,7 @@ nav {
 .logo-cont {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .logo-text {
@@ -30,6 +45,32 @@ nav {
 .logo {
   width: 3.339rem;
   height: 2.205rem;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 1.26rem;
+}
+
+.subscribe {
+  width: 8.568rem;
+  height: 3.402rem;
+  background: #0F3443;
+  color: #fff;
+}
+
+.sub-cont {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,11 @@
+@import "mixins";
+.base{
+    padding: 0 1.5rem;
+    width: 100%;
+}
+.btn{
+    @include toRem(border-radius, 42);
+    border: none;
+    font-weight: 500;
+    @include toRem(font-size, 20);
+}
