@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0rem;
+}
+
+.logo-cont {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 2.016rem;
+  color: #0F3443;
+  font-weight: 600;
+  margin-left: 0.945rem;
+}
+
+.logo {
+  width: 3.339rem;
+  height: 2.205rem;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,3 @@
+@mixin toRem($prop, $val){
+    #{$prop}:#{($val * 0.063)}rem
+}

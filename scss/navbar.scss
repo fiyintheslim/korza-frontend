@@ -1,0 +1,21 @@
+@import "mixins";
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0rem;
+}
+.logo-cont{
+    display: flex;
+    align-items: center;
+}
+.logo-text{
+    @include toRem(font-size, 32);
+    color: #0F3443;
+    font-weight: 600;
+    @include toRem(margin-left, 15)
+}
+.logo{
+    @include toRem(width, 53);
+    @include toRem(height, 35);
+}
