@@ -6,8 +6,9 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  width: 1200px;
+  width: 1500px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .base {
@@ -20,6 +21,27 @@ body {
   border: none;
   font-weight: 500;
   font-size: 1.26rem;
+}
+
+.btn--gradient {
+  background: linear-gradient(347.64deg, #34E89E -3.77%, #0F3443 104.95%);
+}
+
+.btn--circle {
+  border-radius: 100%;
+}
+
+.btn--green {
+  background: #34E89E;
+  box-shadow: 0px 0px 4px 1px #34E89E;
+  width: 12.663rem;
+  height: 4.158rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--green img {
+  margin-left: 1rem;
 }
 
 nav {
@@ -71,6 +93,128 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.landing {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.wave-bg-right {
+  position: absolute;
+  right: 0rem;
+  bottom: 15rem;
+}
+
+.wave-bg-left {
+  position: absolute;
+  left: 0rem;
+  bottom: 5rem;
+}
+
+.landing__content {
+  position: relative;
+}
+
+.dark-star {
+  position: absolute;
+  top: -2rem;
+  right: 5rem;
+}
+
+.green-star {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.landing__small-text {
+  font-size: 0.882rem;
+  margin-bottom: 0.756rem;
+}
+
+.landing__heading {
+  font-size: 4.536rem;
+  line-height: 5.418rem;
+  margin-bottom: 1.512rem;
+  font-weight: 700;
+  color: #0F3443;
+  width: 40rem;
+}
+
+.landing__paragraph {
+  font-size: 1.512rem;
+  line-height: 2.268rem;
+  color: #7D8182;
+  width: 40rem;
+}
+
+.landing__imgs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left {
+  position: relative;
+  top: 6rem;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gradient-card {
+  background: linear-gradient(347.64deg, #34E89E -3.77%, #0F3443 104.95%);
+  border-radius: 6.5rem;
+  padding: 2rem;
+  width: 17.01rem;
+  height: 17.01rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.gradient-card__audio {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.gradient-card__text-cont {
+  color: #fff;
+}
+
+.gradient-card__heading {
+  font-weight: 600;
+  font-size: 1.26rem;
+  line-height: 1.89rem;
+  margin-bottom: 0.7rem;
+}
+
+.gradient-card__paragraph {
+  font-size: 0.945rem;
+}
+
+.progress {
+  width: 100%;
+  height: 0.567rem;
+  border-radius: 1.197rem;
+  background: rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+.progress:before {
+  content: "";
+  position: absolute;
+  border-radius: 1.197rem;
+  height: 100%;
+  width: 65%;
+  left: 0;
+  background: #0F3443;
 }
 
 /*# sourceMappingURL=index.css.map */

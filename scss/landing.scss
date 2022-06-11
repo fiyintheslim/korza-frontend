@@ -1,0 +1,111 @@
+@import "mixins";
+@import "variables";
+
+.landing{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+}
+.wave-bg-right{
+    position: absolute;
+    right: 0rem;
+    bottom: 15rem;
+}
+.wave-bg-left{
+    position: absolute;
+    left: 0rem;
+    bottom: 5rem;
+}
+.landing__content{
+    position: relative;
+    
+}
+.dark-star{
+    position: absolute;
+    top:-2rem;
+    right: 5rem;
+}
+.green-star{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+}
+.landing__small-text{
+    @include toRem(font-size, 14);
+    @include toRem(margin-bottom, 12);
+}
+.landing__heading{
+    @include toRem(font-size, 72);
+    @include toRem(line-height, 86);
+    @include toRem(margin-bottom, 24);
+    font-weight: 700;
+    color: #0F3443;
+    width: 40rem;
+}
+.landing__paragraph{
+    @include toRem(font-size, 24);
+    @include toRem(line-height, 36);
+    color: #7D8182;
+    width: 40rem;
+}
+
+
+.landing__imgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    position: relative;
+    top: 6rem;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gradient-card{
+    background: $gradient-background;
+    border-radius: 6.5rem;
+    padding: 2rem;
+    @include toRem(width, 270);
+    @include toRem(height, 270);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.gradient-card__audio{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.gradient-card__text-cont{
+    color: #fff;
+}
+.gradient-card__heading{
+    font-weight: 600;
+    @include toRem(font-size, 20);
+    @include toRem(line-height, 30);
+    margin-bottom: 0.7rem;
+}
+.gradient-card__paragraph{
+    @include toRem(font-size, 15);
+}
+.progress{
+    width: 100%;
+    @include toRem(height, 9);
+    @include toRem(border-radius, 19);
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        @include toRem(border-radius, 19);
+        height: 100%;
+        width: 65%;
+        left: 0;
+        background: #0F3443;
+
+    }
+}

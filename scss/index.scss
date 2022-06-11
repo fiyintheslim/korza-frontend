@@ -5,9 +5,11 @@
 }
 body{
     font-family: 'Josefin Sans', sans-serif;
-    width: 1200px;
+    width: 1500px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 @import "general.scss";
 @import "navbar.scss";
+@import "landing.scss";
