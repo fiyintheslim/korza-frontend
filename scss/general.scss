@@ -15,7 +15,16 @@
 }
 .btn--circle{
     border-radius: 100%;
-    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include toRem(margin-right, 19);
+    img{
+        z-index: 3;
+        position: relative;
+    }
+   
 }
 .btn--green{
     background: #34E89E;
@@ -25,7 +34,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include toRem(margin-right, 52);
     img{
         margin-left: 1rem;
     }
+}
+.wave-bg-right{
+    position: absolute;
+    right: 0rem;
+    bottom: 15rem;
+    z-index: -1;
+}
+.wave-bg-left{
+    position: absolute;
+    left: 0rem;
+    bottom: 5rem;
+    z-index: -1;
 }

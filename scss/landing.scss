@@ -7,16 +7,7 @@
     justify-content: space-between;
     padding: 5rem;
 }
-.wave-bg-right{
-    position: absolute;
-    right: 0rem;
-    bottom: 15rem;
-}
-.wave-bg-left{
-    position: absolute;
-    left: 0rem;
-    bottom: 5rem;
-}
+
 .landing__content{
     position: relative;
     
@@ -46,8 +37,75 @@
 .landing__paragraph{
     @include toRem(font-size, 24);
     @include toRem(line-height, 36);
+    @include toRem(margin-bottom, 29);
     color: #7D8182;
     width: 40rem;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include toRem(margin-bottom, 50);
+    .btn--circle{
+        @include toRem(width, 76);
+        @include toRem(height, 76);
+        &:before{
+            content: "";
+            width: 65%;
+            height: 65%;
+            background: #fff;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom:0;
+            left:0;
+            right:0;
+            margin: auto;
+        }
+    }
+}
+.works{
+    color: #7D8182;
+    text-decoration: underline;
+    font-weight: 500;
+    @include toRem(font-size, 20);
+}
+.platforms{
+    @include toRem(padding, 24);
+    border:solid 1px #EDF1F2;
+    @include toRem(border-radius, 8);
+    background: #fff
+}
+.platforms__inner{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-content: center;
+    @include toRem(gap, 1);
+    background: #EDF1F2;
+    
+}
+.platform{
+    background: #fff;
+    display: flex;
+    @include toRem(padding, 22);
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.platform__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include toRem(margin-left, 24);
+}
+.platform__text__small{
+    color: #7D8182;
+    @include toRem(font-size, 14);
+    @include toRem(margin-bottom, 16);
+}
+.platform__text__large{
+    @include toRem(font-size, 24);
+    font-weight: 500
 }
 
 
