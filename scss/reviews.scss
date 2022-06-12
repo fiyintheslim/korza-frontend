@@ -52,6 +52,7 @@
     background: #FDFDFD;
     @include responsive{
         margin-top: 1rem;
+        width: 100%;
     }
 }
 .quote-cont{

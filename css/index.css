@@ -240,6 +240,11 @@ nav {
   justify-content: flex-start;
   margin-bottom: 3.15rem;
 }
+@media only screen and (max-width: 768px) {
+  .buttons {
+    flex-wrap: wrap;
+  }
+}
 .buttons .btn--circle {
   width: 4.788rem;
   height: 4.788rem;
@@ -264,6 +269,11 @@ nav {
   font-weight: 500;
   font-size: 1.26rem;
 }
+@media only screen and (max-width: 768px) {
+  .works {
+    margin: 1rem 0;
+  }
+}
 
 .platforms {
   padding: 1.512rem;
@@ -287,12 +297,25 @@ nav {
   align-items: center;
   justify-content: flex-start;
 }
+@media only screen and (max-width: 768px) {
+  .platform {
+    padding: 0.63rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .platform__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 1.512rem;
+}
+@media only screen and (max-width: 768px) {
+  .platform__text {
+    margin: 0.2rem 0;
+    align-items: center;
+  }
 }
 
 .platform__text__small {
@@ -304,6 +327,11 @@ nav {
 .platform__text__large {
   font-size: 1.512rem;
   font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .platform__text__large {
+    font-size: 1.134rem;
+  }
 }
 
 .landing__imgs {
@@ -690,6 +718,7 @@ nav {
 @media only screen and (max-width: 768px) {
   .review {
     margin-top: 1rem;
+    width: 100%;
   }
 }
 
