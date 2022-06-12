@@ -642,6 +642,11 @@ nav {
   position: relative;
   left: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .reasons {
+    width: 90%;
+  }
+}
 
 .reason {
   color: #0F3443;

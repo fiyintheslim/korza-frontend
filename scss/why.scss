@@ -28,6 +28,9 @@
     @include toRem(margin-top, 33);
     position: relative;
     left: 2rem;
+    @include responsive{
+        width: 90%;
+    }
 }
 .reason{
     color: #0F3443;
