@@ -18,7 +18,7 @@
             <img src="resources/logo.png" alt="Korna Logo" class="logo" />
             <p class="logo-text">Korna</p>
         </div>
-        <div class="all-nav-items">
+        <div class="all-nav-items close">
             <div class="nav-items">
                 <a class="nav-item">Home</a>
                 <a class="nav-item">Explore</a>
@@ -29,6 +29,9 @@
                 <button class="btn subscribe" type="button">Subscribe</button>
             </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
     </nav>
     <main >
         <section class="base landing">
@@ -303,5 +306,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        let open = false;
+        const hamBurger = document.querySelector(".bi-list");
+        const navItems = document.querySelector(".all-nav-items");
+
+        hamBurger.addEventListener("click", ()=>{
+            
+            if(open){
+                navItems.classList.add("close")
+                navItems.classList.remove("open")
+                
+            }else{
+                navItems.classList.add("open")
+                navItems.classList.remove("close")
+               
+            }
+            open = !open
+        })
+    </script>
 </body>
 </html>
