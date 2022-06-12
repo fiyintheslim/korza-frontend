@@ -1,0 +1,22 @@
+@import "mixins";
+@import "variables";
+
+.join{
+    background: #EDF1F2;
+    @include toRem(padding-top, 77);
+}
+.join__heading{
+    text-align: center;
+    font-weight: 600;
+}
+.sm-heading{
+    color: #7D8182;
+    @include toRem(font-size, 20);
+    
+    
+}
+.lg-heading{
+    @include toRem(margin-top, 16);
+    color: #0F3443;
+    @include toRem(font-size, 48);
+}

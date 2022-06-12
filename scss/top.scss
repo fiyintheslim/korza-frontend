@@ -2,7 +2,7 @@
 @import "mixins";
 
 .top{
-
+    @include toRem(margin-bottom, 116);
 }
 .top__title-section{
     display: flex;
@@ -31,4 +31,72 @@
     right: 0;
     top: 0;
     width: 25rem;
+}
+.concentric{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.top-cards{
+    @include toRem(margin-top, 62);
+    display: flex;
+    justify-content: space-between;
+}
+.top-card{
+    background: #EDF1F2;
+    @include toRem(padding-left, 48);
+    position: relative;
+    @include toRem(height, 426);
+    width: 48%;
+    display: flex;
+    align-items: center;
+}
+.top-card__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include toRem(width, 352);
+    margin: auto 0;
+}
+.top-card__title{
+    @include toRem(margin-top, 32);
+    @include toRem(font-size, 32);
+    font-weight: 600;
+}
+.top-card__paragraph{
+    color: #7D8182;
+    @include toRem(font-size, 16);
+    @include toRem(margin-top, 24);
+    @include toRem(line-height, 20);
+}
+.top-card__listen{
+    @include toRem(margin-top, 24);
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    color: #0C6641;
+    @include toRem(font-size, 16);
+    img{
+        margin-left: 1rem;
+    }
+}
+.card-img-1{
+    position: absolute;
+    bottom:0;
+    right: 9rem;
+}
+.card-img-2{
+    position: absolute;
+    bottom:0;
+    right: 0rem;
+}
+.card-img-3{
+    position: absolute;
+    bottom:10rem;
+    right: 0rem;
+}
+.card-img-4{
+    position: absolute;
+    top:0rem;
+    right: 10rem;
 }

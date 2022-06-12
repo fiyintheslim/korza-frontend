@@ -51,3 +51,26 @@
     bottom: 5rem;
     z-index: -1;
 }
+.gradient-circle{
+    @include toRem(width, 56);
+    @include toRem(height, 56);
+    border-radius: 100%;
+    background: $gradient-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    &:after{
+        content:"";
+        @include toRem(width, 72);
+        @include toRem(height, 72);
+        
+        background: rgba(52, 232, 158, 0.34);
+        border-radius: 100%;
+        position: absolute;
+        margin: auto;
+        top:0;
+        bottom:0;
+    }
+}

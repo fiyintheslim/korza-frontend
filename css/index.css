@@ -68,6 +68,29 @@ body {
   z-index: -1;
 }
 
+.gradient-circle {
+  width: 3.528rem;
+  height: 3.528rem;
+  border-radius: 100%;
+  background: linear-gradient(347.64deg, #34E89E -3.77%, #0F3443 104.95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.gradient-circle:after {
+  content: "";
+  width: 4.536rem;
+  height: 4.536rem;
+  background: rgba(52, 232, 158, 0.34);
+  border-radius: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -303,6 +326,10 @@ nav {
   background: #0F3443;
 }
 
+.top {
+  margin-bottom: 7.308rem;
+}
+
 .top__title-section {
   display: flex;
   position: relative;
@@ -332,6 +359,106 @@ nav {
   right: 0;
   top: 0;
   width: 25rem;
+}
+
+.concentric {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.top-cards {
+  margin-top: 3.906rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-card {
+  background: #EDF1F2;
+  padding-left: 3.024rem;
+  position: relative;
+  height: 26.838rem;
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+
+.top-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 22.176rem;
+  margin: auto 0;
+}
+
+.top-card__title {
+  margin-top: 2.016rem;
+  font-size: 2.016rem;
+  font-weight: 600;
+}
+
+.top-card__paragraph {
+  color: #7D8182;
+  font-size: 1.008rem;
+  margin-top: 1.512rem;
+  line-height: 1.26rem;
+}
+
+.top-card__listen {
+  margin-top: 1.512rem;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  color: #0C6641;
+  font-size: 1.008rem;
+}
+.top-card__listen img {
+  margin-left: 1rem;
+}
+
+.card-img-1 {
+  position: absolute;
+  bottom: 0;
+  right: 9rem;
+}
+
+.card-img-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0rem;
+}
+
+.card-img-3 {
+  position: absolute;
+  bottom: 10rem;
+  right: 0rem;
+}
+
+.card-img-4 {
+  position: absolute;
+  top: 0rem;
+  right: 10rem;
+}
+
+.join {
+  background: #EDF1F2;
+  padding-top: 4.851rem;
+}
+
+.join__heading {
+  text-align: center;
+  font-weight: 600;
+}
+
+.sm-heading {
+  color: #7D8182;
+  font-size: 1.26rem;
+}
+
+.lg-heading {
+  margin-top: 1.008rem;
+  color: #0F3443;
+  font-size: 3.024rem;
 }
 
 /*# sourceMappingURL=index.css.map */
