@@ -8,6 +8,9 @@ footer.base{
     color: #ffffff;
     justify-content: space-around;
     padding-bottom: 8rem;
+    @include responsive{
+        width: 100%;
+    }
     
 }
 .footer-logo{

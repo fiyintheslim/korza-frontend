@@ -152,7 +152,7 @@ nav {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 90vh;
+    height: 86%;
     background: #34E89E;
     z-index: 4;
     flex-direction: column;
@@ -809,6 +809,11 @@ footer.base {
   color: #ffffff;
   justify-content: space-around;
   padding-bottom: 8rem;
+}
+@media only screen and (max-width: 768px) {
+  footer.base {
+    width: 100%;
+  }
 }
 
 .footer-logo {
