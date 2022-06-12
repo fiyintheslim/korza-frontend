@@ -1,0 +1,83 @@
+@import "mixins";
+@import "variables";
+.reviews{
+    position: relative;
+    z-index: 2;
+    &:after{
+        content: "";
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #0F3443;
+        z-index:-1;
+    }
+}
+.reviews__heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0F3443;
+    h3{
+        @include toRem(width, 566);
+        @include toRem(font-size, 48);
+        font-weight: 600;
+        @include toRem(line-height, 60);
+    }
+}
+.all-reviews{
+    border: solid 0.2rem #0F3443;
+    color: #0F3443;
+    @include toRem(width, 144);
+    @include toRem(height, 54);
+    background: #ffffff;
+}
+.reviews-container{
+    display: flex;
+    justify-content: space-evenly;
+    @include toRem(margin-top, 78);
+}
+.review{
+    @include toRem(width, 400);
+    @include toRem(height, 411);
+    @include toRem(padding, 32);
+    background: #FDFDFD;
+}
+.quote-cont{
+    display: flex;
+    align-items: center;
+    hr{
+        @include toRem(width, 282);
+        @include toRem(height, 4);
+        background: #EDF1F2;
+        border: none;
+    }
+}
+.review__paragraph{
+    @include toRem(margin-top, 55);
+    color: #7D8182;
+    @include toRem(font-size, 16);
+    @include toRem(line-height, 24);
+}
+.user{
+    @include toRem(margin-top, 69);
+    display: flex;
+    align-items: center;
+}
+.user__info{
+    @include toRem(margin-left, 15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user__name{
+    @include toRem(font-size, 20);
+    font-weight: 500;
+    color: #0F3443;
+}
+.user__profession{
+    @include toRem(font-size, 16);
+    color: #7D8182;
+    margin-top: 0.2rem;
+}

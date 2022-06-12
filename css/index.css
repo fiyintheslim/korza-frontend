@@ -443,6 +443,7 @@ nav {
 .join {
   background: #EDF1F2;
   padding-top: 4.851rem;
+  padding-bottom: 4.851rem;
 }
 
 .join__heading {
@@ -459,6 +460,166 @@ nav {
   margin-top: 1.008rem;
   color: #0F3443;
   font-size: 3.024rem;
+}
+
+.join-cards {
+  margin-top: 3.528rem;
+  display: flex;
+  justify-content: center;
+}
+
+.join-card {
+  padding: 2.016rem;
+  width: 25.011rem;
+  height: 25.83rem;
+  border-radius: 0.252rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.join-card__title {
+  margin-top: 2.016rem;
+  font-size: 2.016rem;
+  color: #0F3443;
+  font-weight: 500;
+}
+
+.join-card__paragraph {
+  margin-top: 1.512rem;
+  font-size: 1.008rem;
+  color: #7D8182;
+}
+
+.why {
+  display: flex;
+  padding-top: 6.615rem;
+  position: relative;
+  justify-content: space-between;
+  padding-bottom: 13.923rem;
+}
+
+.why__content {
+  width: 35.658rem;
+}
+
+.why__heading {
+  font-size: 3.024rem;
+  font-weight: 600;
+  color: #0F3443;
+}
+
+.why__paragraph {
+  color: #7D8182;
+  font-size: 1.512rem;
+  margin-top: 2.016rem;
+  line-height: 1.89rem;
+}
+
+.reasons {
+  list-style-image: url("../resources/list-style.png");
+  margin-top: 2.079rem;
+}
+
+.reason {
+  color: #0F3443;
+  font-size: 1.512rem;
+  line-height: 1.89rem;
+  margin-bottom: 1.134rem;
+}
+
+.reviews {
+  position: relative;
+  z-index: 2;
+}
+.reviews:after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #0F3443;
+  z-index: -1;
+}
+
+.reviews__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0F3443;
+}
+.reviews__heading h3 {
+  width: 35.658rem;
+  font-size: 3.024rem;
+  font-weight: 600;
+  line-height: 3.78rem;
+}
+
+.all-reviews {
+  border: solid 0.2rem #0F3443;
+  color: #0F3443;
+  width: 9.072rem;
+  height: 3.402rem;
+  background: #ffffff;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4.914rem;
+}
+
+.review {
+  width: 25.2rem;
+  height: 25.893rem;
+  padding: 2.016rem;
+  background: #FDFDFD;
+}
+
+.quote-cont {
+  display: flex;
+  align-items: center;
+}
+.quote-cont hr {
+  width: 17.766rem;
+  height: 0.252rem;
+  background: #EDF1F2;
+  border: none;
+}
+
+.review__paragraph {
+  margin-top: 3.465rem;
+  color: #7D8182;
+  font-size: 1.008rem;
+  line-height: 1.512rem;
+}
+
+.user {
+  margin-top: 4.347rem;
+  display: flex;
+  align-items: center;
+}
+
+.user__info {
+  margin-left: 0.945rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user__name {
+  font-size: 1.26rem;
+  font-weight: 500;
+  color: #0F3443;
+}
+
+.user__profession {
+  font-size: 1.008rem;
+  color: #7D8182;
+  margin-top: 0.2rem;
 }
 
 /*# sourceMappingURL=index.css.map */

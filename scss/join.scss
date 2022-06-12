@@ -4,6 +4,7 @@
 .join{
     background: #EDF1F2;
     @include toRem(padding-top, 77);
+    @include toRem(padding-bottom, 77);
 }
 .join__heading{
     text-align: center;
@@ -19,4 +20,34 @@
     @include toRem(margin-top, 16);
     color: #0F3443;
     @include toRem(font-size, 48);
+}
+.join-cards{
+    @include toRem(margin-top, 56);
+    
+    display: flex;
+    justify-content: center;
+}
+
+.join-card{
+    @include toRem(padding, 32);
+    @include toRem(width, 397);
+    @include toRem(height, 410);
+    @include toRem(border-radius, 4);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+.join-card__title{
+    @include toRem(margin-top, 32);
+    @include toRem(font-size, 32);
+    color: #0F3443;
+    font-weight: 500;
+
+}
+.join-card__paragraph{
+    @include toRem(margin-top, 24);
+    @include toRem(font-size, 16);
+    color: #7D8182;
 }

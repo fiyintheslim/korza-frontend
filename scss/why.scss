@@ -1,0 +1,36 @@
+@import "mixins";
+@import "variables";
+
+.why{
+    display: flex;
+    @include toRem(padding-top, 105);
+    position: relative;
+    justify-content: space-between;
+    @include toRem(padding-bottom, 221);
+}
+.why__content{
+    @include toRem(width, 566);
+}
+.why__heading{
+    @include toRem(font-size, 48);
+    font-weight: 600;
+    color: #0F3443;
+}
+.why__paragraph{
+    color: #7D8182;
+    @include toRem(font-size, 24);
+    @include toRem(margin-top, 32);
+    @include toRem(line-height, 30);
+}
+.reasons{
+    list-style-image: url("../resources/list-style.png");
+    
+    @include toRem(margin-top, 33);
+}
+.reason{
+    color: #0F3443;
+    @include toRem(font-size, 24);
+    @include toRem(line-height, 30);
+    @include toRem(margin-bottom, 18);
+    
+}
