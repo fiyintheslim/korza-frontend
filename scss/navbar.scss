@@ -20,6 +20,14 @@ nav{
     @include toRem(width, 53);
     @include toRem(height, 35);
 }
+.all-nav-items{
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-between;
+    @include responsive{
+        display: none;
+    }
+}
 .nav-items{
     display: flex;
     justify-content: space-evenly;

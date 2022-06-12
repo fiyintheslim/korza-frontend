@@ -1,3 +1,9 @@
 @mixin toRem($prop, $val){
     #{$prop}:#{($val * 0.063)}rem
 }
+
+@mixin responsive($size:768px){
+    @media only screen and (max-width: $size){
+        @content
+    }
+}

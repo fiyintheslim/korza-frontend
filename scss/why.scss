@@ -26,6 +26,8 @@
     list-style-image: url("../resources/list-style.png");
     
     @include toRem(margin-top, 33);
+    position: relative;
+    left: 2rem;
 }
 .reason{
     color: #0F3443;
@@ -33,4 +35,9 @@
     @include toRem(line-height, 30);
     @include toRem(margin-bottom, 18);
     
+}
+.why__img{
+    @include responsive{
+        display: none;
+    }
 }

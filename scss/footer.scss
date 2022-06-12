@@ -1,6 +1,69 @@
 @import "mixins";
 @import "variables";
 
-footer{
+footer.base{
     display: flex;
+    padding-top: 5rem;
+    background: #0F3443;
+    color: #ffffff;
+    justify-content: space-around;
+    padding-bottom: 8rem;
+    
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    @include responsive{
+        display: none;
+        
+    }
+}
+.footer-logo-cont{
+    display: flex;
+    align-items: center;
+    p{
+        color: #fff;
+        @include toRem(font-size, 39);
+    }
+}
+.logo-paragraph{
+    color: #A3A7A8;
+    @include toRem(font-size, 20);
+}
+.columns{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    @include responsive{
+        flex-wrap: wrap;
+        
+    }
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    a{
+        @include toRem(font-size, 20);
+        @include toRem(margin-bottom, 32);
+    }
+    @include responsive{
+        margin: 2rem;
+    }
+}
+.column__title{
+    color: #A3A7A8;
+    font-weight: 500;
+    @include toRem(font-size, 20);
+    @include toRem(margin-bottom, 36)
+}
+.contact{
+    display: flex;
+    align-items: center;
+    span{
+        margin-left: 0.2rem;
+        @include toRem(font-size, 16);
+    }
 }

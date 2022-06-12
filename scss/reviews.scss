@@ -24,6 +24,9 @@
         @include toRem(font-size, 48);
         font-weight: 600;
         @include toRem(line-height, 60);
+        @include responsive{
+            width: 100%;
+        }
     }
 }
 .all-reviews{
@@ -37,12 +40,19 @@
     display: flex;
     justify-content: space-evenly;
     @include toRem(margin-top, 78);
+    @include responsive{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .review{
     @include toRem(width, 400);
     @include toRem(height, 411);
     @include toRem(padding, 32);
     background: #FDFDFD;
+    @include responsive{
+        margin-top: 1rem;
+    }
 }
 .quote-cont{
     display: flex;

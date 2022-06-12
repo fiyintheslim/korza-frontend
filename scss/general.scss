@@ -3,6 +3,9 @@
 .base{
     padding: 0 1.5rem;
     width: 100%;
+    @include responsive{
+        padding: 0 1rem;
+    }
 }
 .btn{
     @include toRem(border-radius, 42);
@@ -44,12 +47,16 @@
     right: 0rem;
     bottom: 15rem;
     z-index: -1;
+    
 }
 .wave-bg-left{
     position: absolute;
     left: 0rem;
     bottom: 5rem;
     z-index: -1;
+    @include responsive{
+        display: none;
+    }
 }
 .gradient-circle{
     @include toRem(width, 56);

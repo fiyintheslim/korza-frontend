@@ -26,6 +26,11 @@
     
     display: flex;
     justify-content: center;
+    @include responsive{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .join-card{

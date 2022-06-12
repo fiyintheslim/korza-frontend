@@ -1,3 +1,4 @@
+@import "mixins.scss";
 *{
     box-sizing: border-box;
     padding: 0;
@@ -8,6 +9,9 @@ body{
     width: 1500px;
     margin: 0 auto;
     overflow-x: hidden;
+    @include responsive{
+        width: 100%;
+    }
 }
 
 @import "general.scss";
@@ -17,3 +21,4 @@ body{
 @import "join.scss";
 @import "why.scss";
 @import "reviews.scss";
+@import "footer.scss";

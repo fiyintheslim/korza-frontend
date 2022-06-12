@@ -7,11 +7,16 @@
     justify-content: space-between;
     padding: 5rem;
     @include toRem(margin-bottom, 116);
+    @include responsive{
+        padding: 5rem 1rem;
+    }
 }
 
 .landing__content{
     position: relative;
-    
+    @include responsive{
+        width: 100%;
+    }
 }
 .dark-star{
     position: absolute;
@@ -34,6 +39,9 @@
     font-weight: 700;
     color: #0F3443;
     width: 40rem;
+    @include responsive{
+        width: 100%;
+    }
 }
 .landing__paragraph{
     @include toRem(font-size, 24);
@@ -41,6 +49,9 @@
     @include toRem(margin-bottom, 29);
     color: #7D8182;
     width: 40rem;
+    @include responsive{
+        width: 100%;
+    }
 }
 .buttons{
     display: flex;
@@ -113,6 +124,9 @@
 .landing__imgs{
     display: flex;
     justify-content: space-evenly;
+    @include responsive{
+        display: none;
+    }
 }
 .left{
     position: relative;
