@@ -25,7 +25,7 @@
     @include toRem(margin-top, 56);
     
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     @include responsive{
         width: 100%;
         flex-direction: column;
