@@ -627,7 +627,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem;
 }
 
 .join-card__title {
